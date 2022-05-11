@@ -13,4 +13,6 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
 
 EXPOSE 9000
 
+RUN npm install
+
 ENTRYPOINT ["node","index.js"]
